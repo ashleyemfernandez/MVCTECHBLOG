@@ -7,7 +7,7 @@ module.exports = {
       const comment = await Comment.create({
         postId,
         text,
-        // Add userId if you have user authentication
+        
       });
       res.redirect(`/posts/${postId}`);
     } catch (error) {
@@ -16,5 +16,5 @@ module.exports = {
     }
   },
 
-  // comments (updating, deleting).
+  // comments function (updating, deleting).
 };
